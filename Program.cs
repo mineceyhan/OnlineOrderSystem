@@ -5,7 +5,7 @@ class Program
 {
     static void Main()
     {
-        var customer = new Customer(1, "mine@example.com");
+        var customer = new Customer(1, "mine@example.com" , 5234);
         var product = new Product(101, "Laptop", 35000);
 
         var inventoryService = new InventoryService();
