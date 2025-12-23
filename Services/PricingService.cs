@@ -7,7 +7,8 @@ public class PricingService
 {
     public decimal CalculateTotal(Order order)
     {
-        Logger.Log("Calculating total price");
+        //deneme
+        Logger.Log("Calculating total price, denem, mine deneme  ");
         return order.Items.Sum(i => i.GetTotal());
     }
 }
