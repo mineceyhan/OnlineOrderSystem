@@ -18,6 +18,12 @@ public class Order
         Items.Add(item);
         Logger.Log("Item added to order");
     }
+
+       public void SaveOrder()
+    {
+        Logger.Log("Order Save");
+    }
+
     public void FinalizeOrder()
     {
         Logger.Log("Order finalized");
