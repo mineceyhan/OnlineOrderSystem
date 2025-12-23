@@ -1,0 +1,14 @@
+C:\Users\mine.ceyhan\Documents\NOVA\Codes\OnlineOrderSystem\bin\Debug\net9.0\OnlineOrderSystem.exe
+C:\Users\mine.ceyhan\Documents\NOVA\Codes\OnlineOrderSystem\bin\Debug\net9.0\OnlineOrderSystem.deps.json
+C:\Users\mine.ceyhan\Documents\NOVA\Codes\OnlineOrderSystem\bin\Debug\net9.0\OnlineOrderSystem.runtimeconfig.json
+C:\Users\mine.ceyhan\Documents\NOVA\Codes\OnlineOrderSystem\bin\Debug\net9.0\OnlineOrderSystem.dll
+C:\Users\mine.ceyhan\Documents\NOVA\Codes\OnlineOrderSystem\bin\Debug\net9.0\OnlineOrderSystem.pdb
+C:\Users\mine.ceyhan\Documents\NOVA\Codes\OnlineOrderSystem\obj\Debug\net9.0\OnlineOrderSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mine.ceyhan\Documents\NOVA\Codes\OnlineOrderSystem\obj\Debug\net9.0\OnlineOrderSystem.AssemblyInfoInputs.cache
+C:\Users\mine.ceyhan\Documents\NOVA\Codes\OnlineOrderSystem\obj\Debug\net9.0\OnlineOrderSystem.AssemblyInfo.cs
+C:\Users\mine.ceyhan\Documents\NOVA\Codes\OnlineOrderSystem\obj\Debug\net9.0\OnlineOrderSystem.csproj.CoreCompileInputs.cache
+C:\Users\mine.ceyhan\Documents\NOVA\Codes\OnlineOrderSystem\obj\Debug\net9.0\OnlineOrderSystem.dll
+C:\Users\mine.ceyhan\Documents\NOVA\Codes\OnlineOrderSystem\obj\Debug\net9.0\refint\OnlineOrderSystem.dll
+C:\Users\mine.ceyhan\Documents\NOVA\Codes\OnlineOrderSystem\obj\Debug\net9.0\OnlineOrderSystem.pdb
+C:\Users\mine.ceyhan\Documents\NOVA\Codes\OnlineOrderSystem\obj\Debug\net9.0\OnlineOrderSystem.genruntimeconfig.cache
+C:\Users\mine.ceyhan\Documents\NOVA\Codes\OnlineOrderSystem\obj\Debug\net9.0\ref\OnlineOrderSystem.dll
