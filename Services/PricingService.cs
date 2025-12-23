@@ -9,6 +9,7 @@ public class PricingService
     {
         //deneme
         Logger.Log("Calculating total price, denem, mine deneme  ");
+        Logger.Log("PRICE ");
         return order.Items.Sum(i => i.GetTotal());
     }
 }
