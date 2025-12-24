@@ -14,30 +14,30 @@ public class UserProcessor
             throw new ArgumentException("Invalid email format.", nameof(email));
         }
         string hashedPassword = HashPassword(password);
-        using var connection = new SqlConnection("Server=myServer;Database=myDB;");
+  // Connection string should come from configuration
+     using var connection = new SqlConnection(_connectionString); // Inject via constructor
         connection.Open();
 
         using var command = new SqlCommand(
             "INSERT INTO Users (Name, Email, Pwd) VALUES (@username, @email, @password)",
             connection);
 
-        command.Parameters.AddWithValue("@username", username);
-        command.Parameters.AddWithValue("@email", email);
-        command.Parameters.AddWithValue("@password", hashedPassword);
+        command.Parameters.Add("@username", SqlDbType.NVarChar, 255).Value = username;
+        command.Parameters.Add("@email", SqlDbType.NVarChar, 255).Value = email;
+        command.Parameters.Add("@password", SqlDbType.NVarChar, 255).Value = hashedPassword;
 
         command.ExecuteNonQuery();
 
         // 4. Günlükleme (Logging)
-        System.IO.File.WriteAllText("log.txt", $"{username} sisteme kaydedildi.");
+        System.IO.File.AppendAllText("log.txt", $"{DateTime.UtcNow:yyyy-MM-dd HH:mm:ss} - {username} sisteme kaydedildi.{Environment.NewLine}");
     }
 
     private bool IsValidEmail(string email)
     {
         try
         {
-            // 4. Günlükleme (Logging)
-            var logMessage = $"{DateTime.UtcNow:yyyy-MM-dd HH:mm:ss} - {username} sisteme kaydedildi.{Environment.NewLine}";
-            System.IO.File.AppendAllText("log.txt", logMessage); return addr.Address == email;
+            var addr = new System.Net.Mail.MailAddress(email);
+            return addr.Address == email;
         }
         catch
         {
@@ -46,13 +46,11 @@ public class UserProcessor
     }
     // 2. İş Mantığı / Veri Hazırlama
 
-    private string HashPassword(string password)
-    {
-        using var sha256 = SHA256.Create();
-        var saltedPassword = password + "YourSaltHere"; // Use a unique salt per user in production
-        var bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(saltedPassword));
-        return Convert.ToBase64String(bytes);
-    }
+ private string HashPassword(string password)
+   {
+       // BCrypt automatically generates a unique salt per hash
+      return BCrypt.Net.BCrypt.HashPassword(password, workFactor: 12);
+}
 
     // 3. Veritabanı İşlemi
 }
