@@ -12,13 +12,6 @@ public class Test1
             return content;
 
     }
-
-    public string Nova()
-        {
-            string content = "<html><head></head><body><h1>commit 6</h1></body></html>";
-            return content;
-        }
-
 }
 }
  
