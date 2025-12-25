@@ -12,6 +12,15 @@ public class Test1
             return content;
 
     }
+
+    public string CodeAnt0()
+        {
+            return 0;
+        }
+    public string CodeAnt1()
+        {
+            return 1;
+        }
 }
 }
  
