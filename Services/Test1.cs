@@ -13,13 +13,13 @@ public class Test1
 
     }
 
+    public string CodeAnt0()
+        {
+            return 0;
+        }
     public string CodeAnt1()
         {
             return 1;
-        }
-    public string CodeAnt2()
-        {
-            return 0;
         }
 }
 }
