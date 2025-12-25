@@ -1,3 +1,5 @@
+using OnlineOrderSystem.Services;
+
 public class Test2
 {
     public void M2()
@@ -13,12 +15,4 @@ public class Test2
     }
 }
 
-public class Program
-{
-    private static void Main(string[] args)
-    {
-        Test2 test2 = new Test2();
-        test2.M2();
-    }
-}
  

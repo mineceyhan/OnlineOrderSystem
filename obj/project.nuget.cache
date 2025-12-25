@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Q86lUDGlqGs=",
+  "dgSpecHash": "bwXqsUn52Ek=",
   "success": true,
   "projectFilePath": "C:\\Users\\mine.ceyhan\\Documents\\NOVA\\Codes\\OnlineOrderSystem\\OnlineOrderSystem.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mine.ceyhan\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

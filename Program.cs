@@ -5,7 +5,11 @@ class Program
 {
     static void Main()
     {
-        var customer = new Customer(1, "mine@example.com" , 5234);
+
+        Test2 test2 = new Test2();
+        test2.M2();
+
+        var customer = new Customer(1, "mine@example.com" , 5234 , "Istanbul");
         var product = new Product(101, "Laptop", 35000);
 
         var inventoryService = new InventoryService();

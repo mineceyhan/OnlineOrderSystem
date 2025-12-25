@@ -13,11 +13,11 @@ public class Test1
 
     }
 
-    public string CodeAnt0()
+    public int CodeAnt0()
         {
             return 0;
         }
-    public string CodeAnt1()
+    public int CodeAnt1()
         {
             return 1;
         }

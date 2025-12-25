@@ -5,7 +5,7 @@ using System.Text.Json;
 namespace OnlineOrderSystem.Services;
 
 
-    public class Test1
+    public class Test3
     {
         // ❌ Hard-coded secret (CRITICAL)
         private const string ApiKey = "NOVA-SECRET-API-KEY-123456";

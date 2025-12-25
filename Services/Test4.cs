@@ -1,22 +1,15 @@
+using BCrypt.Net;
+using System.Data;
+using System.Data.SqlClient;
+
 namespace OnlineOrderSystem.Services;
 
 public class UserProcessor
 {
     public void ProcessUser(string username, string email, string password)
     {
-        // 1. Doğrulama Mantığı (Validation)
-        if (string.IsNullOrWhiteSpace(username))
-            throw new ArgumentException("Username cannot be empty.", nameof(username));
-
-        if (string.IsNullOrWhiteSpace(password))
-            throw new ArgumentException("Password cannot be empty.", nameof(password));
-
-        if (string.IsNullOrWhiteSpace(email) || !IsValidEmail(email))
-        {
-            throw new ArgumentException("Invalid email format.", nameof(email));
-        }
         string hashedPassword = HashPassword(password);
-  // Connection string should come from configuration
+    // Connection string should come from configuration
      using var connection = new SqlConnection(_connectionString); // Inject via constructor
         connection.Open();
 
