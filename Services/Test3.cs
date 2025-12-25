@@ -2,8 +2,9 @@ using System;
 using System.IO;
 using System.Text.Json;
 
-namespace Services
-{
+namespace OnlineOrderSystem.Services;
+
+
     public class Test1
     {
         // ❌ Hard-coded secret (CRITICAL)
@@ -48,4 +49,4 @@ namespace Services
             }
         }
     }
-}
+

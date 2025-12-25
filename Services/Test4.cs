@@ -1,3 +1,5 @@
+namespace OnlineOrderSystem.Services;
+
 public class UserProcessor
 {
     public void ProcessUser(string username, string email, string password)

@@ -1,7 +1,7 @@
-using System;
 
-namespace Services
-{
+
+namespace OnlineOrderSystem.Services;
+
 public class Test1
 
 {
@@ -22,5 +22,5 @@ public class Test1
             return 1;
         }
 }
-}
+
  
